@@ -1,137 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chowmyan R - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1>CHOWMYAN</h1>
-        <ul>
-          <li><a href="#s-container">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="btn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chowmyan R | Game Programmer</title>
 
-    <div class="icons">
-      <a href="https://github.com/ChowmyanR"><i class="fa-brands fa-github"></i></a>
-      <div class="line"></div>
-      <a href="https://www.linkedin.com/in/chowmyan-r-19409422b/"><i class="fa-brands fa-linkedin-in"></i></a>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1 class="logo">CHOWMYAN R<span>.</span></h1>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h2>
+        JUNIOR <br>
+        <span>GAME PROGRAMMER</span>
+      </h2>
+
+      <p>
+        Passionate game developer focused on gameplay programming,
+        combat systems, AI systems, and immersive prototype development
+        using Unity and Unreal Engine.
+      </p>
+
+      <button onclick="scrollProjects()">VIEW PROJECTS</button>
+      <button onclick="window.open('https://drive.google.com/file/d/1Plp_7_o4XJ0KYSHWMJn-F0ZPdph0huV-/view?usp=sharing', '_blank')">VIEW RESUME</button>
     </div>
 
-    <section>
-      <div class="s-container" id="s-container">
-        <div class="content">
-          <span class="subtitle"> Hello </span>
-          <h1 class="title">
-            I'm <span>Chowmyan R <br /></span>a Game Developer.
-          </h1>
-          <p class="description">
-            Welcome to my Game development realm! I'm Chowmyan, a dedicated
-            and innovative Game developer works in Unity and Unreal Engines.
-            Throughout my journey in gaming, I've
-            developed multiple of projects, creates various prototypes,
-            level designs, game physics,game programming.
+
+    <div class="hero-image">
+      <!-- Replace with your image -->
+      <img src="Profile.jpg" alt="Profile Picture">
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <h2 class="section-title">ABOUT ME</h2>
+
+    <div class="about-container">
+      <p>
+        Hello! I'm Chowmyan R, IT graduate and aspiring Game Programmer.
+        I enjoy creating gameplay mechanics, combat systems, enemy AI, animation
+        systems, and interactive prototypes using Unity and Unreal Engine.
+        My passion lies in building immersive gameplay experiences and continuously
+        improving my programming skills.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <h2 class="section-title">PROTOTYPES</h2>
+
+    <div class="project-grid">
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+
+        <video muted loop>
+          <source src="project1.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-content">
+          <h3>Zombie Invasion Prototype</h3>
+
+          <p>
+            Unity Engine6 prototype featuring melee combat,
+            enemy and Boss AI with FSM, combo attacks, and animation systems.
+            Enemy AI includes patrolling, chasing, and attacking behaviors.
           </p>
-          <div class="buttons">
-            <a href="#">About Me</a>
-            <a href="https://drive.google.com/file/d/1SdkBCmZLP-D1-GoLMKw05ri-6ZmI7nCf/view?usp=drive_link">Resume</a>
-          </div>
+          <a href="https://github.com/ChowmyanR/ZombieInvasion" target="_blank">View on GitHub</a>
         </div>
-        <div class="image">
-          <img src="Profilepic.jpg" alt="pfp" />
-        </div>
-      </div>
-    </section>
 
-    <div class="projects-section" id="projects">
-      <div class="header">
-        <h3>Projects</h3>
-        <h1>Some Of My Work:</h1>
       </div>
-      <div class="wrapper">
-        <div class="project-card">
-          <div class="project-image-container">
-            <img class="project-image" src="BoxMaze.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3>Box Maze</h3>
-            <div class="check-project">
-              <a href="https://github.com/ChowmyanR/BoxMaze" target="_blank"><i class="fab fa-github"></i></a>
-              
-            </div>
-          </div>
+
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+
+        <video muted loop>
+          <source src="project2.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-content">
+          <h3>Box Maze</h3>
+
+          <p>
+            Unity Engine maze type prototype focused on player movement, camera control,obstacle interaction, and level design.
+          </p>
+          <a href="https://github.com/ChowmyanR/BoxMaze" target="_blank">View on GitHub</a>
         </div>
-        <div class="project-card">
-          <div class="project-image-container">
-            <img class="project-image" src="CarSimulator.jpg" alt="" />
-          </div>
-          <div class="project-content">
-            <h3>Car Simulator</h3>
-            <div class="check-project">
-              <a href="https://github.com/ChowmyanR/Car-Simulator" target="_blank"><i class="fab fa-github"></i></a>
-              
-            </div>
-          </div>
-        </div>
-        
-        
+
       </div>
+
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+
+        <video muted loop>
+          <source src="project3.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-content">
+          <h3>Car Simulator</h3>
+
+          <p>
+            Built a prototype using Unity Engine6 that simulates car physics, including acceleration, braking, and steering mechanics.
+            Also implemented UI Elements for mobile controls and main menu navigation.
+    
+          </p>
+          <a href="https://github.com/ChowmyanR/Car-Simulator" target="_blank">View on GitHub</a>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="header">
-          <h3>Contact</h3>
-          <h1>Reach me out via:</h1>
-        </div>
-        <div class="wrapper">
-          <div class="grp">
-            <i class="fa-solid fa-paper-plane"></i>
-            <span>chowmyanraja@gmail.com</span>
-          </div>
-          <div class="grp">
-            <i class="fa-solid fa-phone"></i>
-            <span>+91 6369740685</span>
-          </div>
-          <div class="grp">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>@CHOWMYAN R</span>
-          </div>
-        </div>
-        <div class="footer">
-          <p>Let's talk about a project</p>
-          <a href="mailto:chowmyanraja@gmail.com">Hire Me <i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+
+    <h2 class="section-title">SKILLS</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-box">Unity Engine</div>
+      <div class="skill-box">Unreal Engine</div>
+      <div class="skill-box">C#</div>
+      <div class="skill-box">C++</div>
+      <div class="skill-box">Gameplay Programming</div>
+      <div class="skill-box">Enemy AI</div>
+      <div class="skill-box">Animation Systems</div>
+      <div class="skill-box">GitHub</div>
+
     </div>
 
-    <!-- back top button  -->
-    <a href="#" class="back-top">
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
-  </body>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2 class="section-title">CONTACT</h2>
+
+    <div class="contact-container">
+
+      <p>Email : chowmyanraja@gmail.com</p>
+      <p>LinkedIn : <a href="https://linkedin.com/in/chowmyan-r-19409422b" target="_blank">Chowmyan R</a></p>
+      <p>GitHub : <a href="https://github.com/ChowmyanR" target="_blank">github.com/ChowmyanR</a></p>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 CHOWMYAN R | GAME PROGRAMMER</p>
+  </footer>
+
+
   <script src="script.js"></script>
+</body>
 </html>
+
+
+

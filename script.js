@@ -1,14 +1,25 @@
-const btn = document.getElementById("btn");
-btn.addEventListener("click", () => {
-  document.querySelector("header ul").classList.toggle("show");
-});
+function scrollProjects() {
 
-const toTop = document.querySelector(".back-top");
+  document.getElementById('projects').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 
-window.addEventListener("scroll", () => {
-  if (pageYOffset > 75) {
-    toTop.classList.add("active");
-  } else {
-    toTop.classList.remove("active");
-  }
+
+// VIDEO PLAY ON HOVER
+const cards = document.querySelectorAll('.project-card');
+
+cards.forEach(card => {
+
+  const video = card.querySelector('video');
+
+  card.addEventListener('mouseenter', () => {
+    video.play();
+  });
+
+  card.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
 });
